@@ -62,28 +62,28 @@
 
         FUNCTION {
             bindings = <
-&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                                &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)
-&trans            &trans            &trans            &trans            &trans       &trans           &trans      &trans            &trans      &trans      &trans      &trans
-&trans            &trans            &trans            &trans            &trans       &trans           &bt BT_CLR  &trans            &trans      &trans      &trans      &trans
-&trans            &trans            &trans            &key_repeat       &key_repeat  &key_repeat      &trans      &trans                                                &bt BT_SEL 0
+&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                      &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)
+&trans            &trans            &trans            &trans            &trans      &trans      &trans  &trans            &trans      &trans      &trans      &trans
+&trans            &trans            &trans            &trans            &trans      &trans      &trans  &trans            &trans      &trans      &trans      &trans
+&trans            &trans            &trans            &trans            &trans      &trans      &trans  &trans                                                &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp NUMBER_1                &kp NUMBER_2     &kp NUMBER_3     &kp NUMBER_4      &kp N5                                                          &kp NUMBER_6  &kp N7        &kp N8         &kp N9  &kp N0
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &kp ASTERISK       &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &trans        &kp LC(LEFT)  &kp LC(RIGHT)  &trans  &kp SEMICOLON
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3   &kp PERIOD         &kp EQUAL                    &trans          &trans        &trans        &trans         &trans  &trans
-&trans                      &trans           &trans           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans                       &trans          &trans                                             &trans
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp N5                                 &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0
+&trans        &trans        &trans        &trans            &trans             &trans      &trans  &trans        &trans  &trans  &trans  &kp SEMICOLON
+&trans        &trans        &trans        &trans            &trans             &trans      &trans  &trans        &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans      &trans  &trans                                &trans
             >;
         };
 
         ARROW {
             bindings = <
-&kp ESCAPE      &trans          &sk UP_ARROW    &trans                   &trans                                        &trans        &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW          &trans        &bt BT_CLR        &trans        &trans        &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &trans          &trans          &kp LG(LS(RIGHT_ARROW))  &trans        &trans            &trans        &trans        &trans  &trans  &trans  &trans
-&trans          &trans          &trans          &bt BT_SEL 0             &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4                          &word
+&trans  &trans  &trans  &trans        &trans                                        &trans        &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans        &trans        &bt BT_CLR        &trans        &trans        &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans        &trans        &trans            &trans        &trans        &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4                          &word
             >;
         };
 
@@ -99,7 +99,7 @@
         SCROLL {
             bindings = <
 &kp TAB    &kp ESCAPE  &kp LC(E)   &trans     &kp LG(T)                              &trans          &trans              &trans         &kp LC(LS(UP_ARROW))    &kp UP_ARROW
-&kp LC(A)  &trans      &kp DELETE  &kp RIGHT  &trans     &trans      &trans          &kp BACKSPACE   &kp LC(J)           &kp LC(K)      &kp LC(L)               &kp LC(SEMICOLON)
+&trans     &trans      &kp DELETE  &kp RIGHT  &trans     &trans      &trans          &kp BACKSPACE   &kp LC(J)           &kp LC(K)      &kp LC(L)               &kp LC(SEMICOLON)
 &kp LG(Z)  &kp LG(X)   &kp LG(C)   &kp LG(V)  &kp LEFT   &trans      &trans          &kp DOWN        &kp LG(LEFT_ARROW)  &kp LG(RIGHT)  &kp LC(LS(DOWN_ARROW))  &trans
 &trans     &trans      &trans      &trans     &trans     &trans      &kp LANGUAGE_1  &kp LANGUAGE_2                                                             &trans
             >;
