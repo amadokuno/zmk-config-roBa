@@ -28,15 +28,6 @@
 / {
     combos { compatible = "zmk,combos"; };
 
-    macros {
-        word: pass {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp O &kp R &kp A &kp O &kp R &kp A &kp O &kp R &kp A &kp O &kp R &kp A &kp NUMBER_4 &kp ENTER>;
-            label = "PASS";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
