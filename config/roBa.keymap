@@ -96,7 +96,7 @@
             bindings = <
 &kp TAB    &kp ESCAPE  &kp END     &trans     &kp LC(T)                              &trans          &trans              &trans         &kp RS(RC(UP_ARROW))    &kp UP_ARROW
 &kp HOME   &trans      &kp DELETE  &kp RIGHT  &trans     &trans      &trans          &kp BACKSPACE   &kp RC(J)           &kp RC(K)      &kp RC(L)               &kp RC(SEMICOLON)
-&kp LC(Z)  &kp LC(X)   &kp LC(C)   &kp LC(V)  &kp LEFT   &trans      &trans          &kp DOWN        &kp RG(LEFT_ARROW)  &kp RG(RIGHT)  &kp RC(RS(DOWN_ARROW))  &trans
+&kp LC(Z)  &kp LC(X)   &kp LC(C)   &kp LC(V)  &kp LEFT   &trans      &trans          &kp DOWN        &kp RA(LEFT_ARROW)  &kp RA(RIGHT)  &kp RC(RS(DOWN_ARROW))  &trans
 &trans     &trans      &trans      &trans     &mkp RCLK  &trans      &kp LANGUAGE_1  &kp LANGUAGE_2                                                             &trans
             >;
         };
