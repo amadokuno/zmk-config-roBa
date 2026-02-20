@@ -36,11 +36,39 @@
             label = "PASS";
         };
 
-        new_macro: new_macro {
+        SplitViewLeft: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kt LC(GLOBE) &kp LEFT_ARROW &kt LC(GLOBE)>;
             label = "NEW_MACRO";
+        };
+
+        SplitViweRight: SplitViweRight {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LC(GLOBE) &kp RIGHT &kt LC(GLOBE)>;
+            label = "SPLITVIWERIGHT";
+        };
+
+        SplitViweCansel: SplitViweCansel {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LC(GLOBE) &kp UP_ARROW &kt LC(GLOBE)>;
+            label = "SPLITVIWECANSEL";
+        };
+
+        SlideOverON: SlideOverON {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LC(GLOBE) &kp DOWN &kt LC(GLOBE)>;
+            label = "SLIDEOVERON";
+        };
+
+        SlideOverOFF: SlideOverOFF {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt GLOBE &kp BACKSLASH &kt GLOBE>;
+            label = "SLIDEOVEROFF";
         };
     };
 
@@ -58,19 +86,19 @@
 
         FUNCTION {
             bindings = <
-&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                                  &kp LS(NUMBER_6)      &kp LS(N7)         &kp LS(N8)    &kp LS(N9)  &kp LS(N0)
-&trans            &trans            &trans            &trans            &trans      &kp RS(GRAVE)      &kp RS(SQT)  &trans                &kp C_RW           &kp C_PP      &kp C_NEXT  &trans
-&trans            &trans            &trans            &trans            &trans      &kp RS(EQUAL)      &trans       &trans                &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_MUTE  &trans
-&trans            &trans            &trans            &trans            &trans      &trans             &trans       &kp LG(LS(NUMBER_4))                                               &trans
+&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                                           &kp LS(NUMBER_6)      &kp LS(N7)         &kp LS(N8)    &kp LS(N9)  &kp LS(N0)
+&trans            &trans            &trans            &trans            &trans      &kp RS(GRAVE)      &kp RS(SQT)           &trans                &kp C_RW           &kp C_PP      &kp C_NEXT  &trans
+&trans            &trans            &trans            &trans            &trans      &kp RS(EQUAL)      &trans                &trans                &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_MUTE  &trans
+&trans            &trans            &trans            &trans            &trans      &trans             &kp LG(LS(NUMBER_3))  &kp LG(LS(NUMBER_4))                                               &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp N5                                 &kp NUMBER_6  &kp N7        &kp N8         &kp N9  &kp N0
-&trans        &trans        &trans        &trans            &trans             &trans      &trans  &trans        &kp LC(LEFT)  &kp LC(RIGHT)  &trans  &kp SEMICOLON
-&trans        &trans        &trans        &trans            &trans             &trans      &trans  &trans        &trans        &trans         &trans  &trans
-&trans        &trans        &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans      &trans  &trans                                             &trans
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp N5                                    &kp NUMBER_6       &kp N7          &kp N8           &kp N9         &kp N0
+&trans        &trans        &trans        &trans            &trans             &trans         &trans  &kp LG(BACKSLASH)  &kp LC(LEFT)    &kp LC(RIGHT)    &trans         &kp SEMICOLON
+&trans        &trans        &trans        &trans            &trans             &trans         &trans  &SlideOverON       &SplitViewLeft  &SplitViweRight  &SlideOverOFF  &kp BACKSLASH
+&trans        &trans        &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GLOBE      &trans  &trans                                                             &trans
             >;
         };
 
